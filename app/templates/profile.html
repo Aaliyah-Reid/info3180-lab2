@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block main %}
+
+<div class="user_info">
+    <img src="{{ url_for('static', filename='aaliyahjlr.jpg') }}" alt="A photo of Aaliyah Reid">
+    <h1>Aaliyah Reid</h1>
+    <h2>@aaliyahjlr</h2>
+    <h2>Kingston, Jamaica</h2>
+    <h2>{{date_joined}}</h2>
+</div>
+
+<div class = user_add_info>
+    <p id = "bio">Hello! I'm currently in my second year of studying Computer Science, with a keen focus on mobile and web development.
+        Additionally, I'm a visual artist who primarily works with acrylic paint on canvas.
+         My artistic journey has led me to explore both portrait and landscape painting, 
+         though I have a special preference for portrait painting due to its challenging nature and the deep sense of fulfillment it brings.
+          Outside of my academic and artistic pursuits, I enjoy diving into thriller novels and playing the guitar <3</p>
+
+    <div class="acc_info">
+        <div id="posts">
+            <p id="num" id="posts_num">7</p>
+            <p>Posts</p>
+        </div>
+
+        <div id="following">
+            <p id="num" id="following_num">100</p>
+            <p>Following</p>
+        </div>
+
+        <div id="followers">
+            <p id="num" id="followers_num">250</p>
+            <p>Followers</p>
+        </div>
+    </div>
+
+    <div class="btn_container">
+        <button class="btn" type="button">Follow</button>
+    </div>
+    
+
+    
+</div>
+
+{% endblock %}
